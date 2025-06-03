@@ -27,20 +27,37 @@ router.post("/", (req, res) => {
   utils.getFile("views/thanks.html", res);
 });
 
-router.get("/graph.png", (req, res) => {
+router.get("/tracksRuby.jpg", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.png);
-  utils.getFile("public/images/graph.png", res);
+  utils.getFile("public/images/tracksRuby.jpg", res);
 });
 
-router.get("/people.jpg", (req, res) => {
+
+router.get("/jeniesContato.jpeg", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.jpg);
-  utils.getFile("public/images/people.jpg", res);
+  utils.getFile("public/images/jeniesContato.jpeg", res);
 });
 
-router.get("/product.jpg", (req, res) => {
+
+router.get("/jennieSucesso.png", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.jpg);
-  utils.getFile("public/images/product.jpg", res);
+  utils.getFile("public/images/jennieSucesso.png", res);
 });
+
+router.get("/jennieError.png", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.jpg);
+  utils.getFile("public/images/jennieError.png", res);
+});
+
+
+
+
+router.get("/capaRuby.jpg", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.jpg);
+  utils.getFile("public/images/capaRuby.jpg", res);
+});
+
+
 
 router.get("/confetti_cuisine.css", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.css);
